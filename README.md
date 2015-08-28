@@ -2,7 +2,7 @@
 
 These sample projects are Android Studio projects.
 
-In order to use any one of these project, you will need to:
+In order to use any one of these projects, you will need to:
 
 Obtain the Affectiva Android SDK
 Copy the contents of the SDK's assets folder into this project's assets folder
