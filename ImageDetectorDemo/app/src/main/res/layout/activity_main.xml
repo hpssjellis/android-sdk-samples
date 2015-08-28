@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context=".MainActivity"
+    android:orientation="horizontal" android:keepScreenOn="true">
+
+    <ScrollView
+        android:layout_width="150dp"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/metrics_container"
+            android:background="#AA444444">
+
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/image_view"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/rotation_button_container"
+            android:stretchColumns="0,1">
+            <TableRow>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ROT LEFT"
+                    android:layout_gravity="right"
+                    android:onClick="rotate_left"
+                    android:layout_margin="5dp"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ROT RIGHT"
+                    android:layout_gravity="left"
+                    android:onClick="rotate_right"
+                    android:layout_margin="5dp"/>
+            </TableRow>
+        </TableLayout>
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="10dp"
+            android:text="Select New Image..."
+            android:onClick="select_new_image"/>
+    </RelativeLayout>
+
+
+
+
+
+
+</LinearLayout>

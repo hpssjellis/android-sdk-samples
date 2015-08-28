@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context=".MainActivity"
+    android:id="@+id/main_layout">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/sdk_start_button"/>
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOn="BACK"
+        android:textOff="FRONT"
+        android:id="@+id/front_back_toggle_button"
+        android:layout_above="@id/sdk_start_button"
+        android:layout_alignParentRight="true"
+        android:padding="5dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/surfaceview_visibility_button"/>
+
+
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="#444444"
+        android:id="@+id/smile_textview"/>
+
+</RelativeLayout>
