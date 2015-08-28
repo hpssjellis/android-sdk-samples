@@ -1,0 +1,103 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"  tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:id="@+id/fragment_container"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/main_layout">
+
+        <com.affectiva.framedetectordemo.CameraView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/camera_view"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <FrameLayout
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:background="#DDDDDD"
+                    android:textColor="#000000"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/camera_fps_text"
+                    android:textSize="20sp"/>
+            </FrameLayout>
+            <FrameLayout
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:background="#DDDDDD"
+                    android:textColor="#000000"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/processor_fps_text"
+                    android:textSize="20sp"/>
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/start_buttons_container"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true">
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                >
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Start Camera"
+                    android:layout_gravity="center"
+                    android:id="@+id/camera_button"/>
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <ToggleButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/front_back_toggle_button"
+                    android:padding="5dp"
+                    android:textOn="Back"
+                    android:layout_gravity="center"
+                    android:textOff="Front"/>
+            </FrameLayout>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start SDK"
+            android:layout_gravity="center"
+            android:id="@+id/start_sdk_button"
+            android:layout_alignParentLeft="true"
+            android:layout_above="@id/start_buttons_container"
+            />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
